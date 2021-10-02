@@ -1,0 +1,46 @@
+nav {
+  background-color: var(--black-background);
+}
+
+nav .wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 50px;
+}
+
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+nav ul li:nth-of-type(6) {
+  margin-left: 150px;
+}
+
+a {
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+
+button {
+  text-transform: uppercase;
+  padding: 10px 45px;
+  border: transparent;
+  border-radius: 20px;
+  background-color: var(--btn-color);
+  color: var(--text-color);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+button:focus, button:hover {
+  cursor: pointer;
+}

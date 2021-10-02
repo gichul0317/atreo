@@ -1,8 +1,13 @@
+import '../styles/footer.css'
+
 function Footer() {
   return (
     <footer>
-      <p>&copy; 2021 by Fit Eternally. All rights reserved.</p>
+      <div className="wrapper">
+        <p>&copy; 2021 by Fit Eternally. All rights reserved.</p>
+      </div>
     </footer>
+
   );
 }
 
