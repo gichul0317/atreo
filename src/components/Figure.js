@@ -16,7 +16,7 @@ function Figure() {
           <h2>More Workouts</h2>
           <ul className="video-imgs">
             {
-              arr.map(item => <li><img src={item} alt="additional video imgs"></img></li>)
+              arr.map((item, index) => <li key={index}><img src={item} alt="additional video imgs"></img></li>)
             }
           </ul>
         </div>

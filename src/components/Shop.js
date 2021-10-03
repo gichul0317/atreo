@@ -25,10 +25,10 @@ function Shop() {
           <h2>Featured Products</h2>
           <ul>
             {
-              arr.map(item => {
+              arr.map((item, index) => {
                 return (
-                  <li>
-                    <img src={item} alt-="product imgs"></img>
+                  <li key={index}>
+                    <img src={item} alt="product imgs"></img>
                     <h3>Product Title</h3>
                     <p>{'text '.repeat(8)}</p>
                     <p>$0.00</p>

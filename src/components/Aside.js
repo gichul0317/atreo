@@ -11,8 +11,8 @@ function Aside() {
           <h2>Why Personal Training?</h2>
           <ul>
             {
-              arr.map(item =>
-                <li>
+              arr.map((item, index) =>
+                <li key={index}>
                   <img src={item} alt="benefit description imgs"></img>
                   <p>Benefit Description</p>
                 </li>)

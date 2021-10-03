@@ -32,9 +32,9 @@ function Client() {
           <ul>
             <FontAwesomeIcon icon={faChevronLeft} className="left-arrow" />
             {
-              arr.map(item => {
+              arr.map((item, index) => {
                 return (
-                  <li>
+                  <li key={index}>
                     <img src={item} alt="other clients profile imgs" />
                   </li>
                 )
