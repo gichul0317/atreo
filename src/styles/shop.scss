@@ -1,0 +1,23 @@
+.shop .wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;  
+}
+
+.promotion {
+  background-color: var(--red-background);
+  .wrapper {
+    display: flex;
+  }
+}
+
+.products {
+  background-color: var(--black-background);
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    ul {
+      display: flex;
+    }
+  }
+}

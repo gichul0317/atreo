@@ -5,10 +5,18 @@
   --red-background: #681a1a; 
   --btn-color: #997954;
   --text-color: #fff;
+  --outer-color: #5a5a5a; 
 }
 
 .App {
   font-size: 125%;
   font-family: 'Lato', sans-serif;
   color: var(--text-color);
+  background-color: var(--outer-color);
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;  
 }

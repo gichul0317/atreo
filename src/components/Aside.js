@@ -14,7 +14,7 @@ function Aside() {
               arr.map(item =>
                 <li>
                   <img src={item} alt="benefit description imgs"></img>
-                  Benefit Description
+                  <p>Benefit Description</p>
                 </li>)
             }
           </ul>
