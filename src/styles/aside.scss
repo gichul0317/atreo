@@ -1,0 +1,31 @@
+aside {
+  background-color: var(--black-background);
+}
+
+aside .wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;  
+}
+
+aside h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 50px 0;
+}
+
+aside .container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  ul {
+    padding-bottom: 50px;
+    display: flex;
+    li {
+      padding: 10px;
+      text-align: center;
+    }
+  }
+}

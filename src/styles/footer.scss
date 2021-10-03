@@ -6,11 +6,11 @@ footer .wrapper {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  p {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-footer p {
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}

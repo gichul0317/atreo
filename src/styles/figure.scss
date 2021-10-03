@@ -1,0 +1,34 @@
+.figure {
+  background-color: var(--red-background);
+}
+
+.figure .wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;  
+}
+
+.main-video {
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 60px 0;
+  }
+}
+
+.more-video {
+  padding: 60px 0;
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .video-imgs {
+    padding: 50px 0;
+    display: flex;
+    img {
+      padding: 20px;
+    }
+  }
+}
