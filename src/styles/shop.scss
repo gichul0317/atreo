@@ -8,6 +8,22 @@
   background-color: var(--red-background);
   .wrapper {
     display: flex;
+    align-items: center;
+    // padding: 40px 50px;
+    .text-container {
+      width: 60%;
+      padding: 0 100px;
+      text-align: center;
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+      }
+    }
+    .img-container {
+      width: 40%;
+      padding: 120px;
+    }
   }
 }
 
@@ -16,8 +32,44 @@
   .wrapper {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      padding-top: 70px;
+    }
     ul {
       display: flex;
+      li {
+        padding: 70px;
+      }
+    }
+  }
+}
+
+.products li {
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 20px 0;
+  }
+  p {
+    line-height: 1.5;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+  }
+  button {
+    width: 200px;
+    text-transform: uppercase;
+    padding: 10px;
+    border: transparent;
+    border-radius: 20px;
+    background-color: var(--btn-color);
+    color: var(--text-color);
+    font-size: 0.75rem;
+    text-align: center;
+    &:focus, &:hover {
+      cursor: pointer;
     }
   }
 }

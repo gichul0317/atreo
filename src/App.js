@@ -1,10 +1,13 @@
 import './App.css';
-import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Figure from './components/Figure';
 import Aside from './components/Aside';
 import Shop from './components/Shop';
+import Client from './components/Client';
+import Footer from './components/Footer';
+import initFontAwesome from './initFontAwesome';
+initFontAwesome();
 
 function App() {
   return (
@@ -14,6 +17,7 @@ function App() {
       <Figure />
       <Aside />
       <Shop />
+      <Client />
       <Footer />
     </div>
   );

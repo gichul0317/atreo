@@ -6,7 +6,7 @@ function Figure() {
   const arr = [videoimg2, videoimg2, videoimg2];
 
   return (
-    <section className="figure">
+    <section className="figure" id="process">
       <div className="wrapper">
         <div className="main-video">
           <h2>Live Video</h2>

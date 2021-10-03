@@ -9,7 +9,7 @@ function Header() {
         <div className="header-img-container">
           <img src={headerimg} alt="placeholder img for header section" />
         </div>
-        <div className="intro">
+        <div className="intro" id="about">
           <div className="text-container">
             <h1>Meet Gagan</h1>
             <p>
