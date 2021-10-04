@@ -34,3 +34,34 @@ aside .container {
     }
   }
 }
+
+// media queries
+@media (min-width: 1300px) {
+  aside .wrapper {
+    max-width: 1600px;
+  }
+}
+
+@media (max-width: 950px) {
+  aside .wrapper {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 750px) {
+  aside .wrapper {
+    max-width: 500px;
+  } 
+
+  aside .container {
+    ul {
+      justify-content: space-evenly;
+      li { 
+        padding: 5px;
+        p {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}

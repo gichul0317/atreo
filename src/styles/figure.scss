@@ -32,3 +32,30 @@
     }
   }
 }
+
+// media queries
+@media (min-width: 1300px) {
+  .figure .wrapper {
+    max-width: 1600px;
+  }
+}
+
+@media (max-width: 950px) {
+  .figure .wrapper {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 750px) {
+  .figure .wrapper {
+    max-width: 500px;
+  }
+
+  .more-video { 
+    padding: 30px 0;
+    .video-imgs {
+      flex-direction: column;
+      padding: 50px;
+    }
+  } 
+}
