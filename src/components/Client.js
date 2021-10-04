@@ -3,10 +3,39 @@ import otherClientImg from '../Assets/Place Holder 7.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
 import '../styles/client.scss';
 
 function Client() {
-  const arr = [otherClientImg, otherClientImg, otherClientImg];
+  const arr = [
+    {
+      image: otherClientImg,
+      name: 'Client Name',
+      info: 'text '.repeat(70),
+    },
+    {
+      image: otherClientImg,
+      name: 'Gichul',
+      info: 'gichul '.repeat(70),
+    },
+    {
+      image: otherClientImg,
+      name: 'Coco',
+      info: 'coco '.repeat(70),
+    }
+  ];
+  const [current, setCurrent] = useState(0);
+  const length = arr.length;
+
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  }
+
+  const previSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  }
+
+  // console.log(current);
 
   return (
     <section className="client">
@@ -15,10 +44,26 @@ function Client() {
           <h2>Client Success Story</h2>
           <div className="container">
             <div className="text-container">
-              <h3>Client Name</h3>
+              {/* <h3>Client Name</h3>
               <h4>Program | Weight Lost</h4>
               <p>{'text '.repeat(70)}</p>
-              <button>Book consultation</button>
+              <button>Book consultation</button> */}
+              {
+                arr.map((item, index) => {
+                  return (
+                    <div key={index}>
+                      {index === current && (
+                        <>
+                          <h3>{item.name}</h3>
+                          <h4>Program | Weight Lost</h4>
+                          <p>{item.info}</p>
+                          <button>Book Consultation</button>
+                        </>
+                      )}
+                    </div>
+                  )
+                })
+              }
             </div>
             <div className="img-container">
               <img src={clientImg} alt="client profile img" />
@@ -30,17 +75,20 @@ function Client() {
       <div className="slider">
         <div className="wrapper">
           <ul>
-            <FontAwesomeIcon icon={faChevronLeft} className="left-arrow" />
+            <FontAwesomeIcon icon={faChevronLeft} className="left-arrow" onClick={previSlide} />
             {
               arr.map((item, index) => {
                 return (
-                  <li key={index}>
-                    <img src={item} alt="other clients profile imgs" />
-                  </li>
+                  // <li key={index} >
+                  <div key={index}>
+                    {index === current && (
+                      <img src={item.image} alt="other clients profile imgs" />
+                    )}
+                  </div>
                 )
               })
             }
-            <FontAwesomeIcon icon={faChevronRight} className="right-arrow" />
+            <FontAwesomeIcon icon={faChevronRight} className="right-arrow" onClick={nextSlide} />
           </ul>
         </div>
       </div>
