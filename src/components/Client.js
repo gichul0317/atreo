@@ -35,8 +35,6 @@ function Client() {
     setCurrent(current === 0 ? length - 1 : current - 1);
   }
 
-  // console.log(current);
-
   return (
     <section className="client">
       <div className="story">
@@ -44,10 +42,6 @@ function Client() {
           <h2>Client Success Story</h2>
           <div className="container">
             <div className="text-container">
-              {/* <h3>Client Name</h3>
-              <h4>Program | Weight Lost</h4>
-              <p>{'text '.repeat(70)}</p>
-              <button>Book consultation</button> */}
               {
                 arr.map((item, index) => {
                   return (
@@ -79,7 +73,6 @@ function Client() {
             {
               arr.map((item, index) => {
                 return (
-                  // <li key={index} >
                   <div key={index}>
                     {index === current && (
                       <img src={item.image} alt="other clients profile imgs" />
