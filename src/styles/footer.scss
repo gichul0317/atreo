@@ -14,3 +14,26 @@ footer .wrapper {
   }
 }
 
+// media queries
+@media (min-width: 1300px) {
+  footer .wrapper {
+    max-width: 1600px;
+  }
+}
+
+@media (max-width: 950px) {
+  footer .wrapper {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 750px) {
+  footer .wrapper {
+    max-width: 500px;
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+
+}

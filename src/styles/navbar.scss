@@ -8,7 +8,7 @@ nav .wrapper {
   margin: 0 auto;
 }
 
-nav ul {
+nav .nav-container {
   display: flex;
   justify-content: space-between;
   padding: 10px 60px;
@@ -24,7 +24,15 @@ nav ul {
   }
 }
 
-nav ul li:nth-of-type(6) {
+nav .logo-container {
+  flex-shrink: 0.5;
+}
+
+nav .link-container {
+  display: flex;
+}
+
+nav .link-container li:nth-of-type(5) {
   margin-left: 150px;
   padding: 0;
 }
@@ -41,5 +49,42 @@ nav button {
   text-align: center;
   &:focus, &:hover {
     cursor: pointer;
+  }
+}
+
+
+// media queries
+@media (min-width: 1300px) {
+  nav .wrapper {
+    max-width: 1600px;
+  }
+}
+
+@media (max-width: 950px) {
+  nav .wrapper {
+    max-width: 800px;
+  }
+
+  nav .logo-container {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  nav .wrapper {
+    max-width: 500px;
+  }
+
+  nav .nav-container {
+    padding: 20px;
+  }
+
+  nav .link-container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  nav .link-container li:nth-of-type(5) {
+    margin-left: 0;
   }
 }
